@@ -21,8 +21,8 @@ void Posi(int x)
 //    Serial.print(x);
     int servoX = map(x,190,503,0,180); //x,190,503,70,179
 
-    servoX = min(servoX,180);
-    servoX = max(servoX,1);
+    servoX = min(servoX,180); // value should never get above 180
+    servoX = max(servoX,1); // value should be atleast 1
 
 //    Serial.print('lol");
     Serial.print(servoX);
